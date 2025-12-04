@@ -28,30 +28,33 @@
             font-weight: bold;
         }
 
-        /* Logo Placeholder in Center */
-        .logo-container {
+        /* Center Section */
+        .center-content {
             flex: 1;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
+            padding: 20px;
         }
 
-        .logo-placeholder {
+        .logo-img {
             width: 200px;
             height: 200px;
-            border: 3px dashed #1d9bf0;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #1d9bf0;
-            font-size: 18px;
+            object-fit: contain;
         }
 
-        /* Login Button */
-        .login-btn {
-            background: #1d9bf0;
-            color: white;
+        /* CTA Text */
+        .cta {
+            margin-top: 20px;
+            font-size: 22px;
+            color: #0f1419;
+            font-weight: 500;
+        }
+
+        /* Buttons */
+        .login-btn, .signup-btn {
             padding: 10px 22px;
             border: none;
             border-radius: 25px;
@@ -60,8 +63,23 @@
             transition: 0.2s ease;
         }
 
+        .login-btn {
+            background: #1d9bf0;
+            color: white;
+        }
         .login-btn:hover {
             background: #0c7ec4;
+        }
+
+        .signup-btn {
+            margin-top: 20px;
+            background: #ffffff;
+            color: #1d9bf0;
+            border: 2px solid #1d9bf0;
+            font-weight: bold;
+        }
+        .signup-btn:hover {
+            background: #e6f4ff;
         }
 
         /* Footer Links */
@@ -94,11 +112,18 @@
         <button class="login-btn">Log In</button>
     </header>
 
-    <!-- Center Logo Placeholder -->
-    <div class="logo-container">
-        <div class="logo-placeholder">
-            Logo Here
+    <!-- Center Content -->
+    <div class="center-content">
+        <img src="hd-twitter-badge-round-icon-png-701751695054060zg0xroxbgg.png"
+             alt="Twitter Logo"
+             class="logo-img">
+
+        <div class="cta">
+            Our community is growing—be a part of what’s happening!
         </div>
+
+        <!-- SIGN UP Button -->
+        <button class="signup-btn">Sign Up</button>
     </div>
 
     <!-- Footer Buttons -->
@@ -110,4 +135,5 @@
 
 </body>
 </html>
+
 
