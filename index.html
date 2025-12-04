@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Landing</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f8fa;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Top Bar */
+        header {
+            width: 100%;
+            padding: 15px 25px;
+            background: #1d9bf0;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Logo Placeholder in Center */
+        .logo-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-placeholder {
+            width: 200px;
+            height: 200px;
+            border: 3px dashed #1d9bf0;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #1d9bf0;
+            font-size: 18px;
+        }
+
+        /* Login Button */
+        .login-btn {
+            background: #1d9bf0;
+            color: white;
+            padding: 10px 22px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        .login-btn:hover {
+            background: #0c7ec4;
+        }
+
+        /* Footer Links */
+        footer {
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 14px;
+            color: #536471;
+            margin-bottom: 15px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #536471;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header>
+        <div>Twitter</div>
+        <button class="login-btn">Log In</button>
+    </header>
+
+    <!-- Center Logo Placeholder -->
+    <div class="logo-container">
+        <div class="logo-placeholder">
+            Logo Here
+        </div>
+    </div>
+
+    <!-- Footer Buttons -->
+    <footer>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Help</a>
+    </footer>
+
+</body>
+</html>
 
