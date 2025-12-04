@@ -24,8 +24,13 @@
             align-items: center;
             justify-content: space-between;
             box-sizing: border-box;
-            font-size: 20px;
-            font-weight: bold;
+        }
+
+        /* Small logo in top bar */
+        .top-logo {
+            height: 35px;
+            width: 35px;
+            object-fit: contain;
         }
 
         /* Center Section */
@@ -108,13 +113,13 @@
 
     <!-- Top Navigation Bar -->
     <header>
-        <div>Twitter</div>
+        <img src="twitlogo.png" class="top-logo" alt="Twitter Icon">
         <button class="login-btn">Log In</button>
     </header>
 
     <!-- Center Content -->
     <div class="center-content">
-        <img src="lol.png"
+        <img src="twitlogo.png"
              alt="Twitter Logo"
              class="logo-img">
 
@@ -122,16 +127,4 @@
             Our community is growing—be a part of what’s happening!
         </div>
 
-        <!-- SIGN UP Button -->
-        <button class="signup-btn">Sign Up</button>
-    </div>
-
-    <!-- Footer Buttons -->
-    <footer>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Help</a>
-    </footer>
-
-</body>
-</html>
+        <!-- SIGN UP Bu
